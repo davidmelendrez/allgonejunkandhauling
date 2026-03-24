@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALLGONE Junk & Hauling LLC</title>
+  <meta name="description" content="Veteran-owned junk removal in Colorado Springs, Fountain, and surrounding areas. Fast quotes, light demo, cleanouts, hauling, and disposal. Call 520-457-0587." />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0d10;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; }
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+    .hero {
+      background:
+        linear-gradient(rgba(8,10,14,0.85), rgba(8,10,14,0.92)),
+        url('a_business_style_digital_graphic_design_advertisem.png') center/cover no-repeat;
+      color: white;
+      padding: 40px 0 72px;
+      border-bottom: 4px solid #86c440;
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding-bottom: 28px;
+      flex-wrap: wrap;
+    }
+    .brand-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(0,0,0,0.45);
+      border: 1px solid rgba(134,196,64,0.45);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-weight: 700;
+      color: #f8fafc;
+    }
+    .top-phone {
+      color: #ffffff;
+      font-weight: 800;
+      background: linear-gradient(90deg, #2f5f1f, #86c440);
+      padding: 12px 18px;
+      border-radius: 14px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 30px;
+      align-items: center;
+    }
+    .badge {
+      display: inline-block;
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(0,0,0,0.35);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 18px;
+      color: #d5f5a7;
+    }
+    h1 {
+      font-size: 56px;
+      line-height: 1.02;
+      margin: 0 0 18px;
+      text-shadow: 0 4px 18px rgba(0,0,0,0.45);
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 680px;
+      color: #e5e7eb;
+    }
+    .button-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 22px;
+      border-radius: 14px;
+      font-weight: 800;
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, #2f5f1f, #86c440);
+      color: #ffffff;
+      box-shadow: 0 12px 26px rgba(0,0,0,0.3);
+    }
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.22);
+      background: rgba(0,0,0,0.35);
+      color: white;
+    }
+    .hero-cards {
+      display: grid;
+      gap: 16px;
+    }
+    .card {
+      background: rgba(12,14,18,0.86);
+      border: 1px solid rgba(134,196,64,0.28);
+      border-radius: 24px;
+      padding: 22px;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 16px 28px rgba(0,0,0,0.28);
+    }
+    .card h3 {
+      margin: 0 0 6px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #b7d98d;
+    }
+    .card strong {
+      font-size: 30px;
+      display: block;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+    .logo-panel {
+      background: rgba(10,12,15,0.86);
+      border: 1px solid rgba(134,196,64,0.28);
+      border-radius: 28px;
+      padding: 18px;
+      box-shadow: 0 18px 32px rgba(0,0,0,0.3);
+    }
+    .logo-panel img {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+    }
+    section {
+      padding: 72px 0;
+    }
+    .section-title {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 44px;
+    }
+    .section-title h2 {
+      font-size: 40px;
+      margin: 10px 0 12px;
+      color: #ffffff;
+    }
+    .section-title p, .muted { color: #cbd5e1; }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .service-box, .faq-box, .why-box, .form-box {
+      border: 1px solid rgba(134,196,64,0.18);
+      border-radius: 24px;
+      padding: 24px;
+      background: #11151b;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
+      color: #f8fafc;
+    }
+    .service-box h3, .faq-box h3 {
+      margin-top: 0;
+      font-size: 22px;
+      color: #d9ff9b;
+    }
+    .light {
+      background: linear-gradient(180deg, #101419, #0c0f13);
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    .dark-box {
+      background: linear-gradient(160deg, #111827, #0b0d10);
+      color: white;
+      border-radius: 28px;
+      padding: 34px;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
+      border: 1px solid rgba(134,196,64,0.24);
+    }
+    .dark-box p { color: #d1d5db; }
+    .field {
+      background: #0b0d10;
+      border: 1px solid rgba(134,196,64,0.18);
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+      color: #d1d5db;
+    }
+    .cta {
+      background: linear-gradient(145deg, #12161c, #0b0d10);
+      color: white;
+      text-align: center;
+      border-radius: 34px;
+      padding: 52px 24px;
+      border: 1px solid rgba(134,196,64,0.24);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.26);
+    }
+    .cta h2 {
+      font-size: 42px;
+      margin: 0 0 12px;
+    }
+    .cta p {
+      color: #cbd5e1;
+      max-width: 700px;
+      margin: 0 auto 26px;
+    }
+    footer {
+      padding: 24px 0 40px;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+    @media (max-width: 900px) {
+      .hero-grid, .grid-3, .two-col {
+        grid-template-columns: 1fr;
+      }
+      h1 { font-size: 40px; }
+      .section-title h2, .cta h2 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="topbar">
+        <div class="brand-chip">ALLGONE Junk &amp; Hauling LLC</div>
+        <a class="top-phone" href="tel:5204570587">Call / Text 520-457-0587</a>
+      </div>
+    </div>
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">Veteran Owned • Operated • Local Service</div>
+        <h1>Fast junk removal with a tough, clean look to match the brand.</h1>
+        <p>
+          ALLGONE Junk &amp; Hauling LLC helps homeowners, landlords, and businesses clear out junk fast.
+          We handle furniture, appliances, trash, yard waste, cleanouts, and light demolition across Colorado Springs,
+          Fountain, and surrounding areas.
+        </p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="tel:5204570587">Call / Text 520-457-0587</a>
+          <a class="btn btn-secondary" href="#quote">Get a Free Quote</a>
+        </div>
+        <p style="margin-top:14px;font-size:14px;">Send a picture or address for a fast estimate.</p>
+      </div>
+      <div class="logo-panel">
+        <img src="a_business_style_digital_graphic_design_advertisem.png" alt="ALLGONE Junk & Hauling LLC logo and business card" />
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <div class="muted">SERVICES</div>
+        <h2>Junk removal made simple</h2>
+        <p>Whether it’s one bulky item or a full cleanout, we make the process quick and easy.</p>
+      </div>
+      <div class="grid-3">
+        <div class="service-box"><h3>Full-Service Junk Removal</h3><p>We load, haul, and dispose of unwanted junk so you do not have to lift a finger.</p></div>
+        <div class="service-box"><h3>Furniture &amp; Appliance Removal</h3><p>Couches, mattresses, fridges, washers, dryers, dressers, and more.</p></div>
+        <div class="service-box"><h3>Yard Waste &amp; Trash Cleanup</h3><p>Branches, storm debris, bags, and general outdoor cleanup.</p></div>
+        <div class="service-box"><h3>Garage &amp; Estate Cleanouts</h3><p>Fast cleanouts for garages, homes, rentals, storage units, and move-outs.</p></div>
+        <div class="service-box"><h3>Light Demolition</h3><p>Sheds, playsets, fencing, cabinets, hot tubs, and other non-structural tear-outs.</p></div>
+        <div class="service-box"><h3>Same-Day / Next-Day Service</h3><p>Fast scheduling when available in Colorado Springs, Fountain, and nearby areas.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="light">
+    <div class="container two-col">
+      <div>
+        <div class="muted">WHY CHOOSE US</div>
+        <h2 style="font-size:40px; margin:10px 0 12px;">Why people call AllGone</h2>
+        <p class="muted">We keep it simple: show up, work hard, and get the junk gone without wasting your time.</p>
+      </div>
+      <div>
+        <div class="why-box">Veteran Owned &amp; Local</div>
+        <div class="why-box" style="margin-top:14px;">Fast, friendly service</div>
+        <div class="why-box" style="margin-top:14px;">Upfront pricing based on volume, weight, and distance</div>
+        <div class="why-box" style="margin-top:14px;">Labor, loading, hauling, and disposal included</div>
+        <div class="why-box" style="margin-top:14px;">Serving homeowners, renters, landlords, and businesses</div>
+        <div class="why-box" style="margin-top:14px;">Free quotes from photos or an address</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote">
+    <div class="container two-col">
+      <div class="dark-box">
+        <div class="muted" style="color:#94a3b8;">FREE QUOTE</div>
+        <h2 style="font-size:38px; margin:10px 0 12px;">Ready to get it gone?</h2>
+        <p>Send us photos or your address and we will get back to you with a fast quote.</p>
+        <p><strong style="color:white;">Call/Text:</strong> 520-457-0587</p>
+        <p><strong style="color:white;">Business:</strong> ALLGONE Junk &amp; Hauling LLC</p>
+        <p><strong style="color:white;">Hours:</strong> Same-day / next-day availability when open</p>
+      </div>
+      <div class="form-box">
+        <h3 style="font-size:28px; margin-top:0;">Suggested form fields</h3>
+        <div class="field">Full Name</div>
+        <div class="field">Phone Number</div>
+        <div class="field">Email Address</div>
+        <div class="field">Property Address</div>
+        <div class="field">What needs to be removed?</div>
+        <div class="field">Upload Photos</div>
+        <div class="field">Preferred Service Date</div>
+        <div class="btn btn-primary" style="margin-top:10px;">Get My Free Quote</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="light">
+    <div class="container">
+      <div class="section-title">
+        <div class="muted">FAQ</div>
+        <h2>Questions people ask</h2>
+      </div>
+      <div class="grid-3">
+        <div class="faq-box"><h3>How much does junk removal cost?</h3><p>Pricing depends on volume, weight, distance, and disposal fees. Most jobs usually range from $400 to $800, and a minimum charge applies.</p></div>
+        <div class="faq-box"><h3>Do you offer free quotes?</h3><p>Yes. Send a few photos or your address and we can usually give you a fast quote.</p></div>
+        <div class="faq-box"><h3>What areas do you serve?</h3><p>Colorado Springs, Fountain, and surrounding areas.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container cta">
+      <h2>Need junk gone fast?</h2>
+      <p>Call or text now for a fast quote, and thank you for supporting a local veteran-owned business.</p>
+      <a class="btn btn-primary" href="tel:5204570587">520-457-0587</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 ALLGONE Junk &amp; Hauling LLC • Call/Text 520-457-0587 • Colorado Springs, Fountain, and surrounding areas
+  </footer>
+</body>
+</html>
